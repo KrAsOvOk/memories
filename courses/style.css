@@ -1,0 +1,83 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;;max-width: 100%;height: auto;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #1c1f25;
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+.conteiner{
+    background-color: #17191e;
+    width: 1820px;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0px 0px 20px;
+    position: absolute;
+}
+.math_course_style{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: #1c1f25;
+    user-select: none;
+}
+.math_course_style:hover{
+    border: 1px solid rgb(0, 255, 170);
+    background-color: #1f2531;
+}
+.exit{
+    align-self: center;
+    margin-top: 510px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.exit_style{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: #1c1f25;
+    user-select: none;
+}
+.exit_style:hover{
+    border: 1px solid rgb(0, 255, 170);
+    background-color: #1f2531;
+}
+@media (max-width: 1860px) {
+    .conteiner {
+        width: calc(320px + (1000 - 330) * ((100vw - 320px) / (1260 - 320)));
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .conteiner {
+        display: flex;
+        
+    }
+}
