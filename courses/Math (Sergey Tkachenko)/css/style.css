@@ -36,7 +36,7 @@ body{
 .in_in_conteiner{
     align-items: flex-start;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 20px 10px 40px 10px ;
     flex-wrap: wrap;
     display: inline-flex;
 }
@@ -60,6 +60,21 @@ body{
 }
 .lesson_1:not(:last-child) {
     margin-bottom: 10px;
+}
+.more_lessons{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.more_lessons_styles{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: #1c1f25;
+    user-select: none;
 }
 .exit{
     position: absolute;
