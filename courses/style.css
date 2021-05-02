@@ -19,21 +19,22 @@ body{
     display: flex;
     justify-content: center;
     background-color: #1c1f25;
-    padding-bottom: 30px;
     font-family: 'Roboto', sans-serif;
-    padding: 20px;
+    padding: 30px;
 }
 .conteiner{
-    background-color: #17191e;
+    display: flex;
+    justify-content: center;
     width: 1820px;
     height: auto;
-    margin-top: 30px;
+    background-color: #17191e;
+}
+.in_conteiner{
     display: flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 0px 0px 20px;
-    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 10px 20px;
 }
 .math_course_style{
     display: flex;
@@ -46,14 +47,13 @@ body{
     user-select: none;
 }
 .math_course_style:hover{
-    border: 1px solid rgb(0, 255, 170);
+    border: 2px solid rgb(0, 255, 170);
     background-color: #1f2531;
 }
 .exit{
-    align-self: center;
-    margin-top: 510px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
 }
 .exit_style{
     display: flex;
@@ -66,7 +66,7 @@ body{
     user-select: none;
 }
 .exit_style:hover{
-    border: 1px solid rgb(0, 255, 170);
+    border: 2px solid rgb(255, 0, 0);
     background-color: #1f2531;
 }
 @media (max-width: 1860px) {
