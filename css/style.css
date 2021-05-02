@@ -40,6 +40,9 @@ body{
     margin-bottom: 30px;
     user-select: none;
 }
+.courses{
+    margin-bottom: 30px;
+}
 .courses_styles{
     color: white;
     font-size: 15px;
@@ -53,19 +56,25 @@ body{
     border: 1px solid rgb(0, 255, 170);
     background-color: #1f2531;
 }
+.my_projects{
+    display: flex;
+}
+.my_projects_style{
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: #1c1f25;
+    user-select: none;
+}
+.my_projects_style:hover{
+    border: 1px solid rgb(0, 255, 170);
+    background-color: #1f2531;
+}
 @media (max-width: 550px) {
     .conteiner {
         width: calc(330px + (550 - 330) * ((100vw - 360px) / (550 - 320)));
         margin-top: 20px;
     }
 }
-/* @media (max-width: 435px) {
-    .conteiner {
-        width: 360px;
-    }
-}
-@media (max-width: 390px) {
-    .conteiner {
-        width: 320px;
-    }
-} */
