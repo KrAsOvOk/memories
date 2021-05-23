@@ -15,66 +15,75 @@ ul li{list-style: none;}
 img{vertical-align: top;;max-width: 100%;height: auto;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
-
 body{
     display: flex;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    justify-content: flex-start;
     background-color: #1c1f25;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+    height: 100%;
 }
 .conteiner{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     background-color: #17191e;
-    height: 600px;
-    width: 500px;
-    padding-top: 10px;
-    margin-top: 50px;
+    width: 100%;
+    padding-left: 23px;
+    position: relative;
+    height: auto;
 }
-.main_title{
-    font-family: 'Dancing Script', cursive;
-    font-size: 65px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 30px;
-    user-select: none;
-}
-.courses{
-    margin-bottom: 30px;
-}
-.courses_styles{
-    color: white;
-    font-size: 15px;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 8px 15px;
-    background-color: #1c1f25;
-    user-select: none;
-}
-.courses_styles:hover{
-    border: 2px solid rgb(0, 255, 170);
-    background-color: #1f2531;
-}
-.my_projects{
+.in_conteiner{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    height: auto;
 }
-.my_projects_style{
+.title{
+    font-size: 30px;
     color: white;
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.video{
+    margin: 10px 0px 20px 0px;
+
+}
+.link{
+    color: white;
+    font-size: 20px;
     border: 2px solid white;
     border-radius: 15px;
-    padding: 8px 15px;
+    padding: 4px 12px;
     background-color: #1c1f25;
-    user-select: none;
 }
-.my_projects_style:hover{
+.hover_link:hover{
     border: 2px solid rgb(0, 255, 170);
     background-color: #1f2531;
 }
-@media (max-width: 550px) {
-    .conteiner {
-        width: calc(330px + (550 - 330) * ((100vw - 360px) / (550 - 320)));
-        margin-top: 20px;
+.exit{
+    margin-top: 35px;
+}
+.exit_link{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.exit_link:hover{
+    border: 2px solid rgb(255, 0, 0);
+    background-color: #1f2531;
+}
+@media (max-width: 630px) {
+    .video {
+        width: 500px;
+    }
+}
+@media (max-width: 570px) {
+    .video {
+        width: 400px;
+    }
+}
+@media (max-width: 460px) {
+    .video {
+        width: 300px;
     }
 }
