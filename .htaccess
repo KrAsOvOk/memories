@@ -1,4 +1,4 @@
-#AuthType Basic
-#AuthName 'Protected area'
-#AuthUserFile /.htpasswd
-#Require valid-user
+AuthType Basic
+AuthName "Dangerous!!!"
+AuthUserFile /.htpasswd
+Require valid-user
