@@ -1,0 +1,4 @@
+#AuthType Basic
+#AuthName 'Protected area'
+#AuthUserfile /.psw
+#Require valid-user
